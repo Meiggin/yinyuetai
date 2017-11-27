@@ -1,4 +1,5 @@
-import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import React,{Component} from "react";
+import ReactDOM from "react-dom"
+import router from "./router"
 
-ReactDOM.render(<div>111</div>,document.getElementById("box"))
+ReactDOM.render(router,document.getElementById("box"))
