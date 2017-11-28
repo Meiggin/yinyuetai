@@ -1,5 +1,10 @@
 import React from "react";
 import "./index.scss"
+import {NavLink} from "react-router-dom";
+
+
+
+
 class App extends React.Component{
     constructor(){
         super();
@@ -10,7 +15,11 @@ class App extends React.Component{
     render(){
         return (
             <div>
-                App
+
+                {
+                    this.props.children
+                    //子组件加载的位置
+                }
             </div>
         )
     }

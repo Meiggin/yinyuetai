@@ -1,20 +1,31 @@
 import React from "react";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
-    Link
+    Redirect,
+    Switch
 } from 'react-router-dom'
 import App from "../components/App";
 import Home from "../components/Home";
 import Card from "../components/Card";
 import Product from "../components/Product";
+import User from "../components/User";
+import Find from "../components/Find";
+import Classify from "../components/Classify";
 
 const router = (
     <Router>
         <App>
-            <Route path="./home" component={Home}/>
-            <Route path='./card' component={Card}/>
-            <Route path='./product' component={Product}/>
+            <Switch>
+                {/* 只加载匹配路径的第一个children */}
+                <Route path="/home" component={Home}/>
+                <Route path='/card' component={Card}/>
+                <Route path='/product' component={Product}/>
+                <Route path='/user' component={User}/>
+                <Route path='/find' component={Find}/>
+                <Route path='/classify' component={Classify}/>
+                <Redirect from="*" to="/home"/>
+            </Switch>
         </App>
     </Router>
 )
