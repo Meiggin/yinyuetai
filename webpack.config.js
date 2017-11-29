@@ -20,13 +20,13 @@ module.exports = {
         historyApiFallback: true,
 
         proxy:{
-           '/v4/api/*': {
-                  target: 'https://m.maizuo.com',
-                  host: 'm.maizuo.com',
+           '/api/*': {
+                  target: 'http://shop.m2.yinyuetai.com',
+                  host: 'shop.m2.yinyuetai.com',
                   changeOrigin:true
               }
         }
-
+        // /api/carousel/indexList.json?equipmentName=WAP&num=5
     },
 
 

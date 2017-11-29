@@ -1,17 +1,12 @@
 import React from "react";
 import "./index.scss"
 import {NavLink} from "react-router-dom";
-
+import { connect } from "react-redux"
 
 
 
 class App extends React.Component{
-    constructor(){
-        super();
-        this.state={
 
-        }
-    }
     render(){
         return (
             <div>

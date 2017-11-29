@@ -1,7 +1,10 @@
 import React from "react";
 import "./index.scss"
+import Lunbo from "./lunbo.js"
+import Zhoubian from "./zhoubian.js"
 import {NavLink} from "react-router-dom"
 import "../../../public/font/iconfont.css"
+
 
 class Home extends React.Component{
     constructor(){
@@ -14,10 +17,18 @@ class Home extends React.Component{
         return (
             <div>
                 <div className="header">
-                    <span className="header-l"></span>
-                    <input type="txt"/>
+                    <i className="header-jiantou"></i>
+                    <NavLink to="/search" className="header-search">
+                        <span>
+                            {/* <i className="header-search-t">搜索偶像、商品</i> */}
+                            <i className="header-search-t">搜索偶像、商品</i>
+                            <i className="header-search-b"></i>
+                        </span>
+                    </NavLink>
+
                 </div>
-                
+                <Lunbo></Lunbo>
+                <Zhoubian></Zhoubian>
                 <div className="footer">
                     <div className="footerupback"></div>
                     <ul className="footerContent">

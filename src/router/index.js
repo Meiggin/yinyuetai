@@ -12,13 +12,19 @@ import Product from "../components/Product";
 import User from "../components/User";
 import Find from "../components/Find";
 import Classify from "../components/Classify";
+import Search from "../components/Search";
+import { Provider } from "react-redux";
+import store from "../Redux/store"
+
 
 const router = (
+    <Provider store={store}>
     <Router>
         <App>
             <Switch>
                 {/* 只加载匹配路径的第一个children */}
                 <Route path="/home" component={Home}/>
+                <Route path="/search" component={Search}/>
                 <Route path='/card' component={Card}/>
                 <Route path='/product' component={Product}/>
                 <Route path='/user' component={User}/>
@@ -28,5 +34,6 @@ const router = (
             </Switch>
         </App>
     </Router>
+    </Provider>
 )
 export default router;
