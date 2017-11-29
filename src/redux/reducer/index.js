@@ -1,22 +1,22 @@
 
-// import {combineReducers} from 'redux'
-// const defaultState = {
-//         FROM_PIC:{}
+import {combineReducers} from 'redux'
+const defaultState = {
+        newgoodsreducer:{}
 
-// }
-// const FROM_PIC = (state=defaultState.FROM_PIC,action)=>{
+}
+const newgoodsreducer = (state=defaultState.newgoodsreducer,action)=>{
    
-//     switch(action.type){
-//         case "lunbo":
-//         return Object.assign({},state,action.payload)
-//         default :
-//         return state;
-//     }
-// }
+    switch(action.type){
+        case "newgoodslist":
+        return Object.assign({},state,action.payload)
+        default :
+        return state;
+    }
+}
 
-// const Reducer = combineReducers({
-//      FROM_PIC,
-// })
+const Reducer = combineReducers({
+     newgoodsreducer,
+})
 
 
 
@@ -41,4 +41,32 @@ const zhoubianreducer = (state=[],info)=>{
             return state;
     }
 }
-export  {lunboreducer,zhoubianreducer};
+
+// const newgoodsreducer = (state={},action = {})=>{
+//     let {type,payload} = action;
+
+//     switch(type){
+//         case "newgoodslist":
+//         return {...payload};
+//         default :
+//             return state;
+//     }
+// }
+
+
+
+
+// const chatReducer = (state = defaultState, action = {}) => {
+//     const { type, payload } = action;
+//     switch (type) {
+//       case ADD_CHAT:
+//         return Object.assign({}, state, {...payload});
+//       case CHANGE_USERNAME:
+//         return Object.assign({}, state, {
+//           userName: payload
+//         });
+//       default: return state;
+//     }
+//   };
+  
+export  {lunboreducer,zhoubianreducer,newgoodsreducer};

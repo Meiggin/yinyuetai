@@ -5,13 +5,6 @@ import { connect } from "react-redux";
 import ReactSwipe from 'react-swipe';
 
 class Lunbo extends React.Component {
-    constructor() {
-        super();
-        this.state={
-            looplist:[]
-        }
-        
-    }
     componentWillMount(){
         
         if(this.props.looplist.length==0){

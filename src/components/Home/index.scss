@@ -72,8 +72,84 @@ a,u,s,del{color:#666;text-decoration:none;}
         width:100%;
     }
 }
-    
-
+.hotkeydiv{
+    overflow: hidden;
+    margin: .26666667rem auto;
+    background: #fff;
+    li{
+        margin-right: 1px;
+        border-right: 1px solid #f4f4f8;
+        background: #fff;
+        width: 49.46874%;
+        height: 1.68rem;
+        float: left;
+        border-bottom: 1px solid #f4f4f8;
+        a{
+            padding-left: .66666667rem;
+            padding-top: .22666667rem;
+            img{
+                line-height: 1.68rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                vertical-align: middle;
+                margin-right: .45333333rem;
+            }
+            span{
+                color: #5c5c5f;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.newgoods{
+    background:#fff;
+    font-size: 12px;
+    p{
+        padding: 0 .4rem;
+        height: 1.46666667rem;
+        line-height: 1.46666667rem;
+        .span-l{
+            display: inline-block;
+            font-size: .34666667rem;
+            color: #ff4683;
+        }
+        .span-r{
+            font-size: .29333333rem;
+            color: #ced0dd;
+        }
+        a{
+            float: right;
+            font-size: .29333333rem;
+            color: #5c5c5f;
+        }
+    }
+    .newgoods-home{
+        overflow: hidden;
+        padding: .4rem;
+        div{
+            float: left;
+            width: 31.3%;
+            height: 4.18666667rem;
+            margin-right: .18666667rem;
+            overflow: hidden;
+            
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 2.93333333rem;
+                height: 2.93333333rem;
+                border-radius: .08rem;
+            }
+            p{
+                height: 1.01333333rem;
+                color: #201f1f;
+                font-size: .32rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
 .footer{
     position: fixed;
     left: 0;

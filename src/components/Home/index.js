@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss"
 import Lunbo from "./lunbo.js"
 import Zhoubian from "./zhoubian.js"
+import Newgoods from "./newgoods.js"
 import {NavLink} from "react-router-dom"
 import "../../../public/font/iconfont.css"
 
@@ -29,6 +30,7 @@ class Home extends React.Component{
                 </div>
                 <Lunbo></Lunbo>
                 <Zhoubian></Zhoubian>
+                <Newgoods></Newgoods>
                 <div className="footer">
                     <div className="footerupback"></div>
                     <ul className="footerContent">

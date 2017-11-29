@@ -5,19 +5,27 @@ import axios from "axios"
 
 class Zhoubian extends React.Component{
     componentWillMount(){
+        if(this.props.list.length==0){
             this.props.getzhoubian()
-
+        }
+        
     }
     render(){
+        var ulli = this.props.list.map((ele)=>{
+            // console.log(ele)
+            return <li>
+                <a key={ele.id}>
+                    <img src={ele.img}/>
+                    <span>{ele.name}</span>
+                </a>
+            </li>
+                
+            
+        })
         return (
             <div>
                 <ul className="hotkeydiv">
-                    <li>
-                        <a>
-                            <img/>
-                            <span>111</span>
-                        </a>
-                    </li>
+                    {ulli}
                 </ul>
             </div>
         )
@@ -27,7 +35,7 @@ export default connect(
     (state)=>{
         // console.log(state.zhoubianreducer);
         return {
-            looplist:state.zhoubianreducer
+            list:state.zhoubianreducer
         }
     }
     ,
