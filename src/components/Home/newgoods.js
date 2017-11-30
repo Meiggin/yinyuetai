@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.scss"
 import { connect } from "react-redux";
+import {NavLink} from "react-router-dom"
 import axios from "axios"
 
 class Newgoods extends React.Component{
@@ -20,8 +21,10 @@ class Newgoods extends React.Component{
         }
         item = arr.map((ele)=>{
             return <div key={ele.id}>
-                <img src={ele.img}/>
-                <p>{ele.title}</p>
+                <NavLink to="/product">
+                    <img src={ele.img}/>
+                    <p>{ele.title}</p>
+                </NavLink>
             </div>
         })
      

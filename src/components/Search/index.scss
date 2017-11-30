@@ -1,0 +1,75 @@
+html{
+    background:#fff;
+    font-size:12px;
+}
+.search{
+    height: 2.2rem;
+    line-height: 1.2rem;
+    border-bottom: 1px dashed #ced0dd;
+    .x{
+        padding: .29333333rem;
+        background: url("../../../public/img/10.png") no-repeat;
+        background-size: .29333333rem .29333333rem;
+        position: absolute;
+        left: 7.9rem;
+        top: .7rem;
+    }
+    .jiantou{
+        display: inline-block;
+        height: 1.2rem;
+        width: 1.06666667rem;
+        background: transparent;
+        text-decoration: none;
+        span{
+            display: inline-block;
+            width: .2rem;
+            height: .52rem;
+            background: url("../../../public/img/2.png") no-repeat 0 0;
+            background-size: .42666667rem 2.2rem;
+            vertical-align: sub;
+            margin-left: .4rem;
+        }
+    }
+    input{
+        width: 7.46666667rem;
+        height: .8rem;
+        line-height: .8rem;
+        background: #f0f1f5;
+        border-radius: .8rem;
+        text-indent: .4rem;
+        border: none;
+        outline: medium;
+        margin-top: .21333333rem;
+    }
+    .spanSearch{
+        display: inline-block;
+        height: 1rem;
+        width: 1.06666667rem;
+        color: #4c4d53;
+        font-size: .32rem;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+.searchUl{
+    li{
+        height: .96rem;
+        line-height: .96rem;
+        padding: 0 .4rem;
+        border-bottom: 1px dashed #f5f5f9;
+        overflow: hidden;
+        font-size:12px;
+        .span_t{
+            display: inline-block;
+            width: .29333333rem;
+            height: .29333333rem;
+            background: url("../../../public/img/2.png") no-repeat 0 -.34666667rem;
+            background-size: .42666667rem 1.42666667rem;
+            vertical-align: middle;
+            margin-right: .26666667rem;
+        }
+    }
+}
+.hidden{
+    display:none;
+}

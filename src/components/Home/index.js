@@ -3,6 +3,7 @@ import "./index.scss"
 import Lunbo from "./lunbo.js"
 import Zhoubian from "./zhoubian.js"
 import Newgoods from "./newgoods.js"
+import Slide from "./slide.js"
 import {NavLink} from "react-router-dom"
 import "../../../public/font/iconfont.css"
 
@@ -31,6 +32,7 @@ class Home extends React.Component{
                 <Lunbo></Lunbo>
                 <Zhoubian></Zhoubian>
                 <Newgoods></Newgoods>
+                <Slide></Slide>
                 <div className="footer">
                     <div className="footerupback"></div>
                     <ul className="footerContent">

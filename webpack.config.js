@@ -24,9 +24,15 @@ module.exports = {
                   target: 'http://shop.m2.yinyuetai.com',
                   host: 'shop.m2.yinyuetai.com',
                   changeOrigin:true
-              }
+              },
+            '/details*': {
+                target: 'http://shop.m.yinyuetai.com',
+                host: 'shop.m.yinyuetai.com',
+                changeOrigin:true
+            },
         }
         // /api/carousel/indexList.json?equipmentName=WAP&num=5
+        // /details?goodsId=3063&refUrl=
     },
 
 

@@ -11,7 +11,6 @@ class Lunbo extends React.Component {
             this.props.getLunbo()
         }
     }
-    // axios.get("/api/carousel/indexList.json?equipmentName=WAP&num=5")
     render() {
         return (
             <div>

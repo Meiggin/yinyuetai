@@ -150,6 +150,28 @@ a,u,s,del{color:#666;text-decoration:none;}
         }
     }
 }
+
+.slide{
+    background:#fff;
+    font-size: 12px;
+    // padding-bottom: 10px;
+    p{
+        padding: 0 .4rem;
+        height: 5.46666667rem;
+        line-height: 1.46666667rem;
+        .span-l{
+            display: inline-block;
+            font-size: .34666667rem;
+            color: #ff4683;
+        }
+        a{
+            float: right;
+            font-size: .29333333rem;
+            color: #5c5c5f;
+        }
+    }
+}
+
 .footer{
     position: fixed;
     left: 0;

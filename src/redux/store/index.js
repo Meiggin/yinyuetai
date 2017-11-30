@@ -2,12 +2,14 @@ import {createStore,combineReducers} from "redux";
 import thunk from "redux-thunk";
 
 import {applyMiddleware} from "redux"
-import  {lunboreducer,zhoubianreducer,newgoodsreducer} from "../Reducer";
+import  {lunboreducer,zhoubianreducer,newgoodsreducer,searchreducer,productreducer} from "../Reducer";
 
 const store = createStore(combineReducers({
     lunboreducer,
     zhoubianreducer,
-    newgoodsreducer
+    newgoodsreducer,
+    searchreducer,
+    productreducer
 }),applyMiddleware(thunk))
 
 export default store;

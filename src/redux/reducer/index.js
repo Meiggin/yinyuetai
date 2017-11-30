@@ -1,7 +1,8 @@
 
 import {combineReducers} from 'redux'
 const defaultState = {
-        newgoodsreducer:{}
+        newgoodsreducer:{},
+        productreducer:{}
 
 }
 const newgoodsreducer = (state=defaultState.newgoodsreducer,action)=>{
@@ -14,9 +15,40 @@ const newgoodsreducer = (state=defaultState.newgoodsreducer,action)=>{
     }
 }
 
+const productreducer = (state=defaultState.productreducer,action)=>{
+    
+     switch(action.type){
+         case "productlist":
+
+         return Object.assign({},state,action.payload)
+         default :
+         return state;
+     }
+ }
+
 const Reducer = combineReducers({
      newgoodsreducer,
+     productreducer
 })
+
+
+// const productreducer = (state=[],info)=>{
+//     let {type,payload} = info;
+
+//     switch(type){
+//         case "productlist":
+//             return [...payload];
+//         default :
+//             return state;
+//     }
+// }
+
+
+
+
+
+
+
 
 
 
@@ -41,6 +73,18 @@ const zhoubianreducer = (state=[],info)=>{
             return state;
     }
 }
+
+const searchreducer = (state=[],info)=>{
+    let {type,payload} = info;
+
+    switch(type){
+        case "searchlist":
+            return [...payload];
+        default :
+            return state;
+    }
+}
+
 
 // const newgoodsreducer = (state={},action = {})=>{
 //     let {type,payload} = action;
@@ -69,4 +113,4 @@ const zhoubianreducer = (state=[],info)=>{
 //     }
 //   };
   
-export  {lunboreducer,zhoubianreducer,newgoodsreducer};
+export  {lunboreducer,zhoubianreducer,newgoodsreducer,searchreducer,productreducer};
