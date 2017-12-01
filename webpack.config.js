@@ -25,7 +25,7 @@ module.exports = {
                   host: 'shop.m2.yinyuetai.com',
                   changeOrigin:true
               },
-            '/details*': {
+            '/details': {
                 target: 'http://shop.m.yinyuetai.com',
                 host: 'shop.m.yinyuetai.com',
                 changeOrigin:true

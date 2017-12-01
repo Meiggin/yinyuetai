@@ -1,0 +1,92 @@
+body{
+    width:100%;
+    height:100%;
+    font-size: 12px;
+    background: #e8e9ee;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    width: 16rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    .cardheader{
+        background: #fff;
+        padding: 0 0.896rem;
+        overflow: hidden;
+        border-bottom: 1px solid #cccccc;
+        position: fixed;
+        top: 0;
+        width: 16rem;
+        height: 1.92rem;
+        background-color: #000;
+        z-index: 1;
+        .edit{
+            float: left;
+            font-size: 0.64rem;
+            color: #999999;
+            line-height: 1.92rem;
+        }
+        .finish{
+            float: left;
+            font-size: 0.64rem;
+            color: #999999;
+            line-height: 1.92rem;
+            display: none;
+        }
+        .cart{
+            color: #333333;
+            font-size: 0.768rem;
+            width: 11.52rem;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.92rem;
+            float: left;
+        }
+        .backcontent{
+            width: 1.36533333rem;
+            height: 1.36533333rem;
+            float: right;
+            margin-top: 0.42666667rem;
+            display: inline-block;
+            color: #000000;
+            text-align: center;
+            z-index: 9999;
+            span{
+                color: #4c4d53;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+.cartfooter{
+    position: fixed;
+    bottom: 0;
+    width: 16rem;
+    height: 2.09066667rem;
+    
+    z-index: 1;
+    background: #fff;
+    .orderbtn{
+        float:left;
+        display:block;
+        width: 3.992rem;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 0.64rem;
+        background: #cf3131;
+        line-height: 2.09066667rem;
+    }
+    .countall{
+        float:left;
+        .pricespan{
+            font-size: 0.64rem;
+        }
+    }
+
+}

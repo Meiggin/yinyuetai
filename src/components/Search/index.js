@@ -71,7 +71,7 @@ export default connect(
             console.log(a);
                 return (dispatch)=>{
                     axios.get("/api/search//suggest.json?number=10&keyWord="+a).then(res=>{
-                        // console.log(res.data.data)
+                        console.log(res.data.data)
                         dispatch({
                             type:'searchlist',
                             payload:res.data.data
